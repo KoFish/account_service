@@ -1,0 +1,18 @@
+{application, account_service,
+ [{description, "Account Service Exercise"},
+  {vsn, "1.0.0"},
+  {registered, []},
+  {mod, { account_service_app, []}},
+  {applications,
+   [kernel,
+    stdlib, runtime_tools,
+    jiffy,
+    cowboy
+   ]},
+  {env,[]},
+  {modules, [account_rest_handler, account_data]},
+
+  {maintainers, []},
+  {licenses, []},
+  {links, []}
+ ]}.
